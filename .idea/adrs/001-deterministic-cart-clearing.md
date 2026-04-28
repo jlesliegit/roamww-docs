@@ -25,7 +25,7 @@ Solution does not rely on slow webhook processing times
 
 No websockets needed to 'check' if webhook is completed
 
-### Negatives
+### Trade-offs
 Relies on presence of `stripe_session_id` is query string
 
 Must understand that the URL state takes precedence over standard hydration flow during checkout

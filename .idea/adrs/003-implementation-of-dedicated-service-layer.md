@@ -26,7 +26,7 @@ Test failures easier to diagnose quicker
 
 Abstraction of logic to dedicated service layer significantly clears up codebase 
 
-### Negatives
+### Trade-offs
 Extra layer of abstraction that will be more difficult to follow 
 
 Integration of these services together for controllers to still function as they are currently 

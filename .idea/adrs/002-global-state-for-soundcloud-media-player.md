@@ -22,6 +22,6 @@ tags to prevent full-page browser refreshes, unmounting component
 By including track_id directly in the context, I was able to avoid prop drilling track_id through multiple components 
 to pass this to the iframe player
 
-### Technical considerations
+### Trade-offs
 Initial concern of Provider triggering application wide re-renders mitigated by storing SoundCloud widget instance in a 
 `useRef` rather than `useState`. Rely only on track_id and boolean states to trigger UI updates
