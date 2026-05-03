@@ -1,4 +1,6 @@
 # Context
+## 30/04/2026
+## Status: proposed
 The initial test suite utilized a mix of both `DatabaseMigrations` and `RefreshDatabase` traits across different test 
 classes. This caused a deceptive bug: when test suites were run individually in isolation, they passed. However, when 
 running the full test suite via `php artisan test`, several tests would fail with a `no such table` SQL error.
