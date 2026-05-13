@@ -1,4 +1,8 @@
 # Context
+As a part of the TypeScript migration, the global state manager for the shopping cart (built using Zustand) required a
+complete overhaul. The store acts as the bridge between the UI and the backend, managing everything from localised cart
+mutations to initiating Stripe checkout. Introducing strict typing was necessary to avoid silent failures and indefinite 
+loading states.
 
 ## *Roadmap Alignment: [Frontend rigour]*
 
