@@ -1,6 +1,6 @@
 # Context
-## 14/06/2026
-## Status: proposed
+## 14/06/2026 - 16/06/2026
+## Status: completed [16/06/2026]
 During adr-010 work, it was discovered that the `updateStripeProductMetadata` method calls Stripe SDK static methods: 
 `Price::all`, `Price::update` & `Product::update` directly. This means that the method can't be mocked and forces any 
 tests to need to make real network calls. As a result, the price-archive path was never tested.
@@ -32,15 +32,25 @@ the silent type error.
 This also raised that the current swallow-and-log behaviour may need reframing for the future - this error was silently 
 failing because of this approach. Not addressing directly in this fix but earmarked for later observation. 
 
+### Revised
+Dependency injection was rejected - not an appropriate solution for the issue as issue was initially misdiagnosed. 
+Real issue was in the logic, not in the Stripe interaction. The dependency injection would not have tested the behaviour
+that was broken within the codebase. 
+
+Because of this, active price selection logic was instead extracted to a public, testable method. API calls + injection 
+now rejected alternatives. 
+
 ## Consequences
 
 ### Positives
-- Price-archive path becomes unit-testable without need for API calls.
-- A test that can assert that `Price::update` receives a string - missing this was how the bug slipped through initially.
-- Defines `StripeService` boundary pattern, applied to `updateStripeProductMetadata` first. 
+- Price selection path becomes unit-testable without need for API calls.
 - Resolves orphaned active prices failure at source.
 
 ### Trade-offs
-- Service injection requires a small amount of wiring complexity working with `StripeService`.
 - Swallow and log behaviour still in place. Currently deferred.
-- Deferred test coupling. Initial bug fixed but tests missing to confirm behaviour. 
+- Despite being an internal helper, selection method is public to allow direct testing. This is an accepted trade off for
+the project.
+- Fetch and mapping for price selection untested. Would require mocking SDK interaction which was judged as 
+over-engineering for codebase.
+- Price ties intentionally untested. This is accepted as low-risk as the application has a single admin user and cases 
+where this may be needed, two price updates at same second, are slim to zero chance given this context. 
