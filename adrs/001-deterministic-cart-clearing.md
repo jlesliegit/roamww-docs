@@ -1,5 +1,7 @@
 # Deterministic Cart Clearing 
-## 20/04/2026 Accepted 
+
+## 20/04/2026
+## Status: Accepted
 ## Context 
 Application uses asynchronous Stripe webhook to handle order completion. I noticed that upon succesful checkout, Stripe 
 redirects, the user is redirected straight back to the `/success` page, sometimes before webhook had finished processing 

@@ -1,6 +1,8 @@
-# Context
+# Implement API Resources to enforce consistent responses
+
 ## 20/05/2026
 ## Status: Accepted
+## Context
 Initially, response shapes were dictated completely by models and ORM. Eager loading relationships were never declared.
 The initial approach was to *blacklist* columns I did not want to receive instead of *whitelisting* those which I wanted 
 to include in the response shape. 

@@ -1,4 +1,5 @@
 # Abstraction of testing logic
+
 ## 30/04/2026
 ## Status: Accepted
 ## Context

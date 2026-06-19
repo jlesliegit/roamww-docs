@@ -1,5 +1,7 @@
 # Implementing Global State for SoundCloud Media Player
-## 21/04/2026 Accepted
+
+## 21/04/2026
+## Status: Accepted
 ## Context 
 
 Currently SoundCloud playback is tied to MixPage component. Navigating away from specific MixPage unmounts the player, 

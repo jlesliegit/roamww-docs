@@ -1,6 +1,8 @@
-# Context
+# Stripe Integration Testability
+
 ## 14/06/2026
 ## Status: Accepted
+## Context
 During adr-010 work, it was discovered that the `updateStripeProductMetadata` method calls Stripe SDK static methods: 
 `Price::all`, `Price::update` & `Product::update` directly. This means that the method can't be mocked and forces any 
 tests to need to make real network calls. As a result, the price-archive path was never tested.

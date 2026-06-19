@@ -1,4 +1,5 @@
 # Implementation of dedicated service layer across application 
+
 ## 21/04/2026 
 ## Status: Accepted
 ## Context 

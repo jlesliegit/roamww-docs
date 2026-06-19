@@ -1,4 +1,5 @@
 # Database schema normalisation
+
 ## 28/04/2026
 ## Status: proposed
 ## Context

@@ -1,6 +1,8 @@
-# Context
+# Implement stripe consistency check
+
 ## 02/06/2026 - 04/06/2026
 ## Status: Accepted
+## Context
 During adr-009-service-layer-method-alignment audit, it was discovered that the current stripe implementation risked
 state divergence between local DB and Stripe in the case of partial failure. This issue touches `storeProduct`, 
 `updateProduct` and `deleteProduct`.

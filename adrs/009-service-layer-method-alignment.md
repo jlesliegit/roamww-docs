@@ -1,6 +1,8 @@
-# Context
+# Apply service layer method conventions 
+
 ## 29/05/2026
 ## Status: Accepted
+## Context
 Whilst abstracting fat controller logic into service layer, these services were abstracted at different times leading to
 misalignment and inconsistencies including: file handling was inconsistent across methods in different domains; file naming 
 was inconsistent across domains; DB transaction patterns not consistent or, in the case of two delete methods, absent 
