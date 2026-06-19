@@ -21,3 +21,33 @@ To aid with robustness, the application is currently being refactored. This docu
 4. **Resilience:** Pessimistic Database locking for Inventory management (*complete*)
 5. **Infrastructure:** AWS Provisioning
 6. **DevOps:** CI/CD Pipelines and zero-downtime deployment
+
+## Architectural Decision Records
+Each ADR details the context, the decision choices and their consequences. These decisions are across the project's
+life from MVP to go-live. 
+
+Earlier ADRs are not as substantial - they are intentionally preserved as written to show development and progression in 
+how I approached these decisions. 
+
+- [ADR-001: Deterministic cart clearing](adrs/001-deterministic-cart-clearing.md)
+  - Status: **Accepted**
+- [ADR-002: Global state for SoundCloud media player](adrs/002-global-state-for-soundcloud-media-player.md)
+  - Status: **Accepted**
+- [ADR-003: Implementation of dedicated service layer](adrs/003-implementation-of-dedicated-service-layer.md)
+  - Status: **Accepted**
+- [ADR-004: Database normalisation](adrs/004-database-normalisation.md)
+  - Status: **Proposed**
+- [ADR-005: Abstraction of testing logic](adrs/005-abstraction-of-testing-logic.md)
+  - Status: **Accepted**
+- [ADR-006: Unify database testing state](adrs/006-unify-database-testing-state.md)
+  - Status: **Accepted**
+- [ADR-007: TypeScript application migration](adrs/007-typescript-application-migration.md)
+  - Status: **Accepted**
+- [ADR-008: Adopt API resources for all domain responses](adrs/008-adopt-api-resources-for-all-domain-responses.md)
+  - Status: **Accepted**
+- [ADR-009: Service layer method alignment](adrs/009-service-layer-method-alignment.md)
+  - Status: **Accepted**
+- [ADR-010: Stripe consistency design](adrs/010-stripe-consistency-design.md)
+  - Status: **Accepted**
+- [ADR-011: Stripe integration testability](adrs/011-stripe-integration-testability.md)
+  - Status: **Accepted**
