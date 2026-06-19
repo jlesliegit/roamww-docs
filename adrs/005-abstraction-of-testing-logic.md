@@ -1,6 +1,6 @@
 # Abstraction of testing logic
 ## 30/04/2026
-## Status: proposed
+## Status: Accepted
 ## Context
 
 Original test suite relied on heavy end-to-end feature/HTTP tests. This had wide test coverage and ensured that the 

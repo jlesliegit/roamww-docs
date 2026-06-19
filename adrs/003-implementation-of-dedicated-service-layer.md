@@ -1,6 +1,6 @@
 # Implementation of dedicated service layer across application 
 ## 21/04/2026 
-## Status: proposed
+## Status: Accepted
 ## Context 
 
 Currently, the application features 'fat' controllers. No abstraction of business logic or database transactions into 

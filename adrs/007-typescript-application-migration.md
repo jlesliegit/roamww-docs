@@ -1,6 +1,6 @@
 # Context
 ## 03/05/2026
-## Status: active
+## Status: Accepted
 Application was initially written in plain vanilla JS. Although initial state was that application worked, after 
 reviewing codebase, the decision was made that as the backend was refactored, this presented a perfect opportunity to 
 introduce TypeScript to enforce strict typing and adeherance to API contracts. 

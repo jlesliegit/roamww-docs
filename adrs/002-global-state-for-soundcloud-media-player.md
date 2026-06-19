@@ -1,5 +1,5 @@
 # Implementing Global State for SoundCloud Media Player
-## 21/04/2026 Proposed [completed 21/04/2026]
+## 21/04/2026 Accepted
 ## Context 
 
 Currently SoundCloud playback is tied to MixPage component. Navigating away from specific MixPage unmounts the player, 
@@ -14,7 +14,7 @@ Global `PlayerProvider` manages state (`currentTrackId`, `isPlaying`) and holds 
 Single `<GlobalMixPlayer />` component mounts at root of app and outside of React Router `<Routes>`
 
 
-## Results
+## Consequences
 ### Positives
 Improved UX - audio persists across navigation over application. Included migration of `<a>` tags to React Route `<Link>`
 tags to prevent full-page browser refreshes, unmounting component
