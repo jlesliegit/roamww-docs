@@ -1,7 +1,7 @@
 # Database schema normalisation
 
 ## 28/04/2026
-## Status: proposed
+## Status: Proposed
 ## Context
 When development began, the codebase was approached one feature at a time. This has lead to a number of inconsistencies 
 with how data is referred to across the application, duplicate columns for items which can share behaviour and incorrectly
