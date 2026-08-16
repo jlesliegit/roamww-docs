@@ -51,3 +51,7 @@ how I approached these decisions.
   - Status: **Accepted**
 - [ADR-011: Stripe integration testability](adrs/011-stripe-integration-testability.md)
   - Status: **Accepted**
+- [ADR-012: Stripe Capture Model](adrs/012-stripe-capture-model.md)
+  - Status: **Accepted**
+- [ADR-013: Backend authentication model](adrs/013-backend-authentication-model.md)
+  - Status: **Accepted**
